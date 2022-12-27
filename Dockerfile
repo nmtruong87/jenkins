@@ -1,3 +1,5 @@
 FROM nginx
-COPY html /usr/share/nginx/html
-EXPOSE 3000
+WORKDIR /var/www/html
+ADD html /var/www/html
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+EXPOSE 80
