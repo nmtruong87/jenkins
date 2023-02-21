@@ -1,0 +1,90 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "datasource",
+            "uid": "grafana"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 11,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "description": "",
+        "gridPos": {
+          "h": 5,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "id": 4,
+        "options": {
+          "content": "<br>\n<div class=\"text-center dashboard-header\">\n<img src=\"https://www.secutix.com/themes/custom/secutix/burgundy_logo.svg\" height=\"150px\" width=\"420  px\">\n</div>",
+          "mode": "html"
+        },
+        "pluginVersion": "8.5.6",
+        "transparent": true,
+        "type": "text"
+      },
+      {
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "gridPos": {
+          "h": 31,
+          "w": 16,
+          "x": 5,
+          "y": 5
+        },
+        "id": 2,
+        "links": [],
+        "options": {
+          "content": "<div style=\"padding: 8px\">\n<h1> Welcome to Cloudmon Monitoring</h1>\n  <p>The main reason of this project is to monitor the infrastructure and applications of Secutix in preproduction and production. WARNING: All the dashboards are applied with terraform from <a href=\"https://gitlab.elca-services.com/terraform/stx/grafana-config\">this gitlab repository</a></p><p> In this project you can find the following information:</p>\n  <hr>\n  <div style=\"display:flex\">\n    <img width=\"30px\" height=\"30px\" src=\"https://img1.freepng.es/20181116/rfs/kisspng-grafana-scalable-vector-graphics-application-softw-5bef3c66805155.6395683215424052225256.jpg\">\n    <h2 style=\"margin-left: 8px\">Dashboards</h2>\n  </div>  \n  <div style=\"padding: 16px\">\n  <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/SF14xXEnk/bonatti\">\n    <p>Bonatti</p>\n  </a> <p>Metrics relevant to Bonatti's project</p>\n <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/QS14bXP7k/pluto\">\n    <p>Pluto</p>\n  </a> <p>Metrics relevant to Pluto project</p>\n <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/vlJVxXP7k/stx-capacity-planning\">\n    <p>Capacity Planning</p>\n  </a>  <p>VMware status and database servers</p>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/QO1VxXEnk/stx-databases\">\n    <p>Databases</p>\n  </a> <p>Database metrics (On-premise and AWS)</p>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/HKJVbXPnz/stx-diagnostic-and-troubleshooting\">\n    <p>Diagnostic & Troubleshooting</p>\n  </a> <p>Dashboards that are incomplete or need improvement</p>\n   <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/OH1VbuPnz/stx-generic-services\">\n    <p>Generic Services</p>\n  </a> <p>System metrics, haproxy, elasticsearch, mongo, vpn, redis, docker, activemq, tomcat, postfix, nfs, etc.</p>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/_O1VbuP7z/stx-health-availability\">\n    <p>Health - Availability</p>\n  </a> <p>Bot detection and alerts</p>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/QO14buE7kz/stx-performance\">\n    <p>Performance</p>\n  </a> <p>BOC Slot Performance Monitoring</p>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://grafana.secutix.com/dashboards/f/OH14xuE7zm/stx-specific-services\">\n    <p>Specific Services</p>\n  </a> <p>Custom dashboards, like stx2_application status, turnstile, backups, etc.</p>\n  </div>\n  <hr>\n  <div>\n  <div style=\"display:flex\">\n    <img width=\"50px\" height=\"30px\" src=\"https://image.pngaaa.com/723/5417723-middle.png\">\n    <h2 style=\"margin-left: -5px\">Doc</h2>\n  </div>\n  <p>There is a <a href=\"https://confluence.secutix.com/display/IDOCFR/Cloud+Monitoring\">Confluence page</a> on the project where you will find information on what technology we use, how to deploy an exporter, how to create a dashboard, how to create or resolve alerts, disaster recovery plan, deployment information, etc. Some usefull links:</p>\n  <div style=\"padding: 16px;width: 100%;\">\n  <a style=\"text-align: left;width: 100%;\" href=\"https://confluence.secutix.com/display/IDOCFR/Alerts\">\n    <p>Alerts</p>\n  </a>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://confluence.secutix.com/pages/viewpage.action?pageId=83234559\">\n    <p>Components info & Deployment schedule</p>\n  </a>\n  <a style=\"text-align: left;width: 100%;\" href=\"https://confluence.secutix.com/display/IDOCFR/Disaster+recovery+plan\">\n    <p>Disaster recovery plan</p>\n  </a>\n   <a style=\"text-align: left;width: 100%;\" href=\"https://confluence.secutix.com/display/IDOCFR/User+guidelines\">\n    <p>User guidelines</p>\n  </a>\n     <a style=\"text-align: left;width: 100%;\" href=\"https://confluence.secutix.com/pages/viewpage.action?pageId=83231697\">\n    <p>Hypercare & Doc</p>\n  </a>\n    <hr>\n</div>\n  <div style=\"display:flex\">\n    <img width=\"30px\" height=\"30px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/512px-Telegram_2019_Logo.svg.png\">\n    <h2 style=\"margin-left: 8px\">Notifications</h2>\n  </div>  \n  <div style=\"display: inline-flex;padding: 4px 16px;width: 100%;\">\n  <a style=\"text-align: center;padding: 8px;display: grid;width: 100%;justify-items: center;\" href=\"https://secutix.slack.com/archives/C01FYTGA05C\">\n    <p style=\"margin:0\"><img width=\"50px\" style=\"padding-bottom: 8px\" src=\"https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png\"></p>\n    <p style=\"margin:0\"><span style=\"background: red;color: white;padding: 2px;border-radius: 5px;\">CRITICAL/WARNING</span></p>\n    <p>Slack channel</p>\n  </a>\n</div>\n<hr>\n<div style=\"display:flex\">\n    <img width=\"30px\" height=\"30px\" src=\"https://cdn.icon-icons.com/icons2/2699/PNG/512/atlassian_jira_logo_icon_170511.png\">\n    <h2 style=\"margin-left: 8px\">Support</h2>\n  </div>\n  <p>For any incident, open a ENV jira or contact with dli_SecuTixCloud@elcanet.local.</p>\n  <br>\n</div>",
+          "mode": "html"
+        },
+        "pluginVersion": "8.5.6",
+        "transparent": true,
+        "type": "text"
+      }
+    ],
+    "schemaVersion": 36,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "Welcome",
+    "uid": "E0JtSqN7k",
+    "version": 5,
+    "weekStart": ""
+  }
